@@ -15,13 +15,54 @@ const vuexLocal = new VuexPersistence({
 const state = {
   loading: false,
   sending: false,
-  error: null,
-  user: [],
+  error: 'Test Error Message',
+  user: {
+    username: 'Yin',
+    name: 'Xiaobo Yin'
+  },
   reconnect: false,
-  activeRoom: null,
-  rooms: [],
-  users: [],
-  messages: [],
+  activeRoom: {
+    id: '168'
+  },
+  rooms: [
+    {
+      id: '11',
+      name: 'Ali'
+    },
+    {
+      id: '12',
+      name: 'Cottage'
+    }
+  ],
+  users: [
+    {
+      username: 'Yin',
+      name: 'Xiaobo Yin',
+      presence: 'online'
+    },
+    {
+      username: 'Jack',
+      name: 'Jack Ma',
+      presence: 'offline'
+    }
+  ],
+  messages: [
+    {
+      username: 'Jack',
+      date: '2019-10-10',
+      text: '悔创阿里杰克马'
+    },
+    {
+      username: 'Poin',
+      date: '2019-10-11',
+      text: '普通人家马皮诺'
+    },
+    {
+      username: 'Robin',
+      date: '2019-10-11',
+      text: `红颜祸水 What's your problem？`
+    }
+  ],
   userTyping: null
 }
 
