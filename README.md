@@ -1,29 +1,41 @@
-# vue-chat
+### init 目录
 
-## Project setup
 ```
-npm install
+vue-chat/
+├── public/
+│   ├── favicon.ico
+│   └── index.html
+├── src/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── loading-btn.css
+│   │   │   └── loading.css
+│   │   └── logo.png
+│   ├── components/
+│   │   ├── ChatNavBar.vue
+│   │   ├── LoginForm.vue
+│   │   ├── MessageForm.vue
+│   │   ├── MessageList.vue
+│   │   ├── RoomList.vue
+│   │   └── UserList.vue
+│   ├── router/
+│   │   └── index.js
+│   ├── store/
+│   │   ├── actions.js
+│   │   ├── index.js
+│   │   ├── mutation-type.js
+│   │   └── mutations.js
+│   ├── views/
+│   │   ├── ChatDashboard.vue
+│   │   └── Login.vue
+│   ├── App.vue
+│   ├── chatkit.js
+│   ├── init-dir.md
+│   ├── init-dir.txt
+│   └── main.js
+├── babel.config.js
+├── package-lock.json
+├── package.json
+├── postcss.config.js
+└── README.md
 ```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
