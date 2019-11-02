@@ -1,3 +1,21 @@
+https://img.shields.io/static/v1?label=vue&message=>=2.6.10&color=success
+https://img.shields.io/static/v1?label=vue-cli&message=>=2.6.10&color=success
+
+## 使用步骤
+
+1. `git clone https://github.com/mx623303468/vue-chat.git`
+2. `cd vue-chat`
+3. `npm install`
+4. `npm run serve`
+5. 浏览器打开`http://localhost:8080`， 登录用户
+6. 另外打开一个浏览器，登录另外一个用户
+
+## 用户
+
+- Jack
+- Pino
+- Robin
+
 ### init 目录
 
 ```

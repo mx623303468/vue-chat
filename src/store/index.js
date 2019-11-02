@@ -15,7 +15,7 @@ const vuexLocal = new VuexPersistence({
 const state = {
   loading: false,
   sending: false,
-  error: 'Test Error Message',
+  error: '',
   currentUser: {},
   reconnect: false,
   activeRoom: null,
