@@ -1,5 +1,13 @@
-https://img.shields.io/static/v1?label=vue&message=>=2.6.10&color=success
-https://img.shields.io/static/v1?label=vue-cli&message=>=2.6.10&color=success
+![](https://img.shields.io/static/v1?label=vue&message=^2.6.10&color=success)
+![](https://img.shields.io/static/v1?label=vuex&message=^3.0.1&color=success)
+![](https://img.shields.io/static/v1?label=vue-cli&message=^2.6.10&color=success)
+![](https://img.shields.io/static/v1?label=node&message=v10.14.1&color=success)
+![](https://img.shields.io/static/v1?label=@pusher/chatkit-client&message=^1.13.2&color=success)
+![](https://img.shields.io/static/v1?label=dayjs&message=^1.8.16&color=success)
+![](https://img.shields.io/static/v1?label=bootstrap-vue&message=^2.0.4&color=success)
+![](https://img.shields.io/static/v1?label=vuex-persist&message=^2.1.1&color=success)
+![](https://img.shields.io/static/v1?label=vue-chat-scroll&message=^1.3.6&color=success)
+![](https://img.shields.io/static/v1?label=vuex-persist&message=^2.1.1&color=success)
 
 ## 使用步骤
 
