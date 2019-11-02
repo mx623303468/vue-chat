@@ -1,6 +1,6 @@
 <template>
   <div class="message-form ld-over">
-    <small class="text-muted">@{{ user.username }}</small>
+    <small class="text-muted">@{{ currentUser.username }}</small>
     <b-form
       @submit.prevent="onSubmit"
       class="ld-over"
@@ -38,7 +38,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['user', 'sending', 'error', 'activeRoom']),
+    ...mapState(['currentUser', 'sending', 'error', 'activeRoom']),
     ...mapGetters(['hasError'])
   }
 }

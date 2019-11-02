@@ -16,52 +16,27 @@ const state = {
   loading: false,
   sending: false,
   error: 'Test Error Message',
-  user: {
-    username: 'Yin',
-    name: 'Xiaobo Yin'
-  },
+  currentUser: {},
   reconnect: false,
-  activeRoom: {
-    id: '168'
-  },
-  rooms: [
-    {
-      id: '11',
-      name: 'Ali'
-    },
-    {
-      id: '12',
-      name: 'Cottage'
-    }
-  ],
-  users: [
-    {
-      username: 'Yin',
-      name: 'Xiaobo Yin',
-      presence: 'online'
-    },
-    {
-      username: 'Jack',
-      name: 'Jack Ma',
-      presence: 'offline'
-    }
-  ],
+  activeRoom: null,
+  rooms: [],
+  users: [],
   messages: [
-    {
-      username: 'Jack',
-      date: '2019-10-10',
-      text: '悔创阿里杰克马'
-    },
-    {
-      username: 'Poin',
-      date: '2019-10-11',
-      text: '普通人家马皮诺'
-    },
-    {
-      username: 'Robin',
-      date: '2019-10-11',
-      text: `红颜祸水 What's your problem？`
-    }
+    // {
+    //   username: 'Jack',
+    //   date: '2019-10-10',
+    //   text: '悔创阿里杰克马'
+    // },
+    // {
+    //   username: 'Poin',
+    //   date: '2019-10-11',
+    //   text: '普通人家马皮诺'
+    // },
+    // {
+    //   username: 'Robin',
+    //   date: '2019-10-11',
+    //   text: `红颜祸水 What's your problem？`
+    // }
   ],
   userTyping: null
 }
