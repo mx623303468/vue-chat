@@ -9,6 +9,9 @@ const MESSAGE_LIMIT = Number(process.env.VUE_APP_MESSAGE_LIMIT) || 10
 let currentUser = null
 let activeRoom = null
 
+/**
+ * 设置房间用户
+ */
 function setMembers() {
   const members = activeRoom.users.map(user => ({
     username: user.id,
@@ -18,6 +21,10 @@ function setMembers() {
   store.commit('setUsers', members)
 }
 
+/**
+ * 根据用户ID建立连接到 chatkit
+ * @param {String} userId 用户ID
+ */
 async function connectUser(userId) {
   const chatManager = new ChatManager({
     instanceLocator: INSTANCE_LOCATOR,
@@ -27,7 +34,10 @@ async function connectUser(userId) {
   currentUser = await chatManager.connect()
   return currentUser
 }
-
+/**
+ * 订阅房间
+ * @param {String} roomId 房间ID
+ */
 async function subscribeToRoom(roomId) {
   store.commit('clearChatRoom')
   // 订阅房间
@@ -63,7 +73,32 @@ async function subscribeToRoom(roomId) {
   return activeRoom
 }
 
+/**
+ * 发送消息
+ * @param {String} text 消息内容
+ */
+async function sendMessage(text) {
+  const messageId = await currentUser.sendMessage({
+    text,
+    roomId: activeRoom.id
+  })
+  return messageId
+}
+
+export function isTyping(roomId) {
+  currentUser.isTypingIn({ roomId })
+}
+
+/**
+ * 断开用户的链接
+ */
+function disconnectUser() {
+  currentUser.disconnect()
+}
+
 export default {
   connectUser,
-  subscribeToRoom
+  subscribeToRoom,
+  sendMessage,
+  disconnectUser
 }
