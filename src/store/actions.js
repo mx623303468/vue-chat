@@ -17,9 +17,6 @@ export default {
    * @param {*} userId 用户ID
    */
   async login({ commit, state }, userId) {
-    console.log('state', state)
-    console.log('commit', commit)
-
     try {
       // 设置错误信息
       commit('setError', '')

@@ -9,6 +9,8 @@
 ![](https://img.shields.io/static/v1?label=vue-chat-scroll&message=^1.3.6&color=success)
 ![](https://img.shields.io/static/v1?label=vuex-persist&message=^2.1.1&color=success)
 
+# 利用 ChatKit 服务的 Vue 聊天室
+
 ## 使用步骤
 
 1. `git clone https://github.com/mx623303468/vue-chat.git`
