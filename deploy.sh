@@ -10,7 +10,7 @@ npm run build
 # 源码推送到远程仓库 master 分支
 git add -A
 git commit -m 'deploy push master'
-git push -u github_origin master
+git push -u origin master
 
 # 进入生成的文件夹
 cd dist
